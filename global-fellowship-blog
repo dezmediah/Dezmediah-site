@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Global Fellowship Blog 8/19 to 10/19/title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.gif" alt="" /></span><span class="title">Dezmediah</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Publications.html">Publications</a></li>
+							<li><a href="Robot_Language.html">Robot Language</a></li>
+							<li><a href="Beep_Boop.html">Beep Boop</a></li>
+							<li><a href="Soundscapes_Worth_Saving.html">Soundscapes Worth Saving</a></li>
+							<li><a href="Catholicism_the_game.html">Catholicism the Game</a></li>
+							<li><a href="CV.html">CV</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h4>Dinacon is Over</h4>
+						  <p>< I just finished a week of the Digital Naturalism Conference (dinacon.org) in Gamboa, Panama. It was an intense and life-giving week. 
+              The best part was probably meeting a bunch of women doing great work like Janne, Lisa, Kristina, Tiare, Madeline, and many, many others. A lot of the dudes were great too, especially Ashlin and of course,
+              my partner Albert, but there's something magical about working with non-men (my shorthand for women and non-binary folks). In general, they so easily handle vulnerability, use 
+              as fodder for connection. For example, one of the last nights, when there was a party at "the mansion" (a crazy nice house built by the somewhat disgraced former president 
+              of the Smithsonian institute in Panama, where several dinasaurs were staying) a group of us were sitting out on the deck chatting and someone gently 
+              chided me for underselling my work. I said "I know, I've been doing that too much this week. I've just been feeling a little out of place here as a writer."
+              "You've been feeling out of place?" one of the group asked. "I've been feeling out of place as a musican." And then sooo quickly it turned into a nice discussion of how we each feel pressure to mold our work to a 
+              platonic ideal of a project and how that pressure is pretty much bullshit and how we're all doing fine work. Bing, bang, boom, we all can move on to talking about interests and future projects a little more settled
+              and confident in ourselves. People were asking each other questions, listening, trading off and getting inspired. So different from the info dump competitive style of communication you see in more masc spaces. I loved it.</p>
+              <p>Gamboa, of course, is beautiful and fascinating--a little ghost town/American style neighborhood right next to the Panama Canal, in the middle of one of the most biodiverse jungles anywhere. Noriega holed up in one of the buildings
+              back in the day before American troops dropped down tanks from helicopters and rolled up on him, afterwards leaving jeep doors and rocket launchers strewn about town. Many buildings were abandoned once the work on the canal was done, 
+              so now you can do things like drink beers in a falling down Catholic church and even spray paint a portrait of your strange looking dog on an old community center, like a certain frog scientist did last year. The town is mostly 
+              scientists from the Smithsonian, plus people like Andy and Kitty, who are doing their own crazy open lab thing in addition to putting on events like Dinacon. Biodiversity means lots of 
+              crazy animals, and if you wanna see vids of sloths and leafcutter ants, you can check out my instagram @dezmediah or Albert's @alboxster.</p>
+              <p>Now I'm in Panama City for a few days and so far it's been good food, hot weather, and basking in a little luxury at the hotel, after a week of sharing a room with several other people and eating a lot of canned vegetables. I'll check back in here in a few days mabes.</p>
+						</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://twitter.com/Mary_T_Miller" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/dezmediah/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/dezmediah/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="Contact.html" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
