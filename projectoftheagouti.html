@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head> <meta> </meta> <p></p> <p></p> </head>
+<body>
+<!DOCTYPE html>
+<html>
+<body>
+
+<div border = "thick solid #0000FF">
+  <p> this is the rest of the page </p>
+</div>
+  
+<div id='output' border = "thick solid #0000FF">
+  <p id='line1'></p>
+  <p id='line2'></p>
+  <p id='line3'></p>
+  <p id='line4'></p>
+  <p id='line5'></p>
+  <p id='line6'></p>
+  <p id='line7'></p>
+  <p id='line8'></p>
+</div>
+
+<script>
+    interrogative = ["Why","When"]
+    interrogative2 = ["What","Where"]
+    person = ["Kitty","Ashlin","Bolsonaro", "Seamus","Mang","Marta","Tiare","Cherise","Janne","Sid","Ramy","Dani","Grace","Paivy","Ana","Rubin","Tomas","Phillipe","John","Lisa","Andy","Albert","Mary","Aden","Madeline","Kristina"]
+    noun1 = ["angle","waste product","pain","dawn","night","project","art","fungus","image","experiment","nectar"]
+    noun2 = ["agouti","caiman","yucca","sweat bee","mouse","mite","coatimundi","snake", "abdomen","computer","sloth","eye"]
+    noun3 = ["pig collagen","spirulina","gelatin","fur","feather","mold"]
+    verb = ["inspect the canal","mine rare earth minerals","filter the plastic","put honey in the eye","dig the hole","try to succeed","forget the history","play with ghost children"] 
+    place = ["Dinalab","dorms","rainforest","canal","tropics","Amazon"]
+    verb2 = ["hesitates","screams","sighs","groans","laughs","gurgles"]
+    answer = ["\"I've got some glitter we could try.\"","\"The slime eats the oats in the most efficient way possible.\"",
+    "\"I just need to go through a process of telling the system, \'That's okay.\'\"","\"The microsope's free, it's downstairs.\"","\"Creativity is the inverse of training.\"",
+    "\"It will probably be about thirty minutes.\"", "\"Firefly fornication.\"","\"Don't worry about it they're all in there.\"",
+            "\"I'm not looking for just depression, but for any kind of sadness.\""]
+
+
+    function randomizer(array_name) {
+                array_name = array_name[Math.floor(Math.random()*array_name.length)];
+                return array_name;
+                };
+    
+
+    questiona = '\"' + randomizer(interrogative) + ' does the ' + randomizer(noun2) + ' ' + randomizer(verb);
+    questionb = '\"' + randomizer(interrogative2) + ' is the ' + randomizer(noun1) + ' of the ' + randomizer(noun2);
+
+    question = [questiona, questionb]
+
+            
+                    
+            let personselection = randomizer(person)
+            let placeselection = randomizer(place)
+            let questionselection = randomizer(question)
+            let verb2selection = randomizer(verb2)
+            let answerselection = randomizer(answer)
+
+            setTimeout(function() {
+            document.getElementById('line1').innerText = 'In the ' + placeselection + ', '
+            }, 1000)
+            setTimeout(function() {
+            document.getElementById('line2').innerText = 'there is ' + personselection + '.'
+             }, 2000)
+            setTimeout(function() {
+            document.getElementById('line3').innerText = questionselection + ', ' + personselection + '?\"'
+            },3000)
+            setTimeout(function() {
+            document.getElementById('line4').innerText = personselection + ' ' + verb2selection + '.'
+            },5000)
+            setTimeout(function() {
+            document.getElementById('line5').innerText = answerselection
+            },7000)
+                
+                
+                
+        </script>
+
+        </body></html>
