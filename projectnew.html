@@ -1,71 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head> <meta> </meta> <p></p> <p></p> </head>
+  <head> <meta http-equiv="refresh" content="15"/> </meta> <p></p> <p></p> </head>
 <body>
-<!DOCTYPE html>
-<html>
 <body>
 
-  <script> 
-    $(document).ready(function(){setInterval(function(){$("#here").load(window.location.href + " #here" );
-                                                       }, 3000);
-                                });
-    $(document).ready(function(){setInterval(function(){$("#here").load(window.location.href + " #here" );
-    }, 3000);
-    });
-    interrogative = ["Why","When"]
-    interrogative2 = ["What","Where"]
-    person = ["Kitty","Ashlin","Bolsonaro", "Seamus","Mang","Marta","Tiare","Cherise","Janne","Sid","Ramy","Dani","Grace","Paivy","Ana","Rubin","Tomas","Phillipe","John","Lisa","Andy","Albert","Mary","Aden","Madeline","Kristina"]
-    noun1 = ["angle","waste product","pain","dawn","night","project","art","fungus","image","experiment","nectar"]
-    noun2 = ["agouti","caiman","yucca","sweat bee","mouse","mite","coatimundi","snake", "abdomen","computer","sloth","eye"]
-    noun3 = ["pig collagen","spirulina","gelatin","fur","feather","mold"]
-    verb = ["inspect the canal","mine rare earth minerals","filter the plastic","put honey in the eye","dig the hole","try to succeed","forget the history","play with ghost children"] 
-    place = ["Dinalab","dorms","rainforest","canal","tropics","Amazon"]
-    verb2 = ["hesitates","screams","sighs","groans","laughs","gurgles"]
-    answer = ["\"I've got some glitter we could try.\"","\"The slime eats the oats in the most efficient way possible.\"",
-    "\"I just need to go through a process of telling the system, \'That's okay.\'\"","\"The microsope's free, it's downstairs.\"","\"Creativity is the inverse of training.\"",
-    "\"It will probably be about thirty minutes.\"", "\"Firefly fornication.\"","\"Don't worry about it they're all in there.\"",
-            "\"I'm not looking for just depression, but for any kind of sadness.\""]
 
-
-    function randomizer(array_name) {
-                array_name = array_name[Math.floor(Math.random()*array_name.length)];
-                return array_name;
-                };
-    
-
-    questiona = '\"' + randomizer(interrogative) + ' does the ' + randomizer(noun2) + ' ' + randomizer(verb);
-    questionb = '\"' + randomizer(interrogative2) + ' is the ' + randomizer(noun1) + ' of the ' + randomizer(noun2);
-
-    question = [questiona, questionb]
-
-            
-                    
-            let personselection = randomizer(person)
-            let placeselection = randomizer(place)
-            let questionselection = randomizer(question)
-            let verb2selection = randomizer(verb2)
-            let answerselection = randomizer(answer)
-
-            setTimeout(function() {
-            document.getElementById('line1').innerText = 'In the ' + placeselection + ', '
-            }, 1000)
-            setTimeout(function() {
-            document.getElementById('line2').innerText = 'there is ' + personselection + '.'
-             }, 2000)
-            setTimeout(function() {
-            document.getElementById('line3').innerText = questionselection + ', ' + personselection + '?\"'
-            },3000)
-            setTimeout(function() {
-            document.getElementById('line4').innerText = personselection + ' ' + verb2selection + '.'
-            },5000)
-            setTimeout(function() {
-            document.getElementById('line5').innerText = answerselection
-            },7000)
-                
-        </script>
-
-<div id="here">
+<div id='output'>
   <p id='line1'></p>
   <p id='line2'></p>
   <p id='line3'></p>
@@ -77,4 +17,75 @@
 </div>
 
 
-        </body></html>
+<script>
+    var adv_of_frequency = ['Sometimes','Often','Occasionally','Once in a blue moon','On a harvest moon','On the spring equinox','On the autumnal equinox']
+    var time_of_day = ['night','dawn','midday']
+    var preposition = ['under', 'past','for','away from']
+    var adjective = ['modest\n','scruffy\n','tiny\n','hairy\n','slimy\n','broken\n']
+    var noun = ['bicycle figurine','3D print of a rambutan','depression booklet','anteater stuffed animal','hummingbird']
+    var place = ['on my nightstand,','in my dresser drawer,','between my sheets,','in the window planter box,','behind my bathroom mirror,']
+    var adjective2 = ['an enormous','an ancient','a greying','a mossy','a saggy','a drooling']
+    var noun2 = ['pebble.','owl.','potato.','kidney bean.','valerian root.','honeycomb.','yucca root.',]
+
+    
+
+    function randomizer(array_name) {
+        array_name = array_name[Math.floor(Math.random()*array_name.length)];
+        return array_name
+    }
+  
+   setTimeout(function() {        
+    document.getElementById('line1').innerText =  randomizer(adv_of_frequency)
+      },1000)
+    setTimeout(function() {
+    document.getElementById('line2').innerText =  'at ' + randomizer(time_of_day) + ','
+      },2000)
+    setTimeout(function() {
+    document.getElementById('line3').innerText = 'I look ' + randomizer(preposition) + ' the '
+      },3000)
+    setTimeout(function() {
+    document.getElementById('line4').innerText =  randomizer(adjective) + randomizer(noun)
+      },4000)
+    setTimeout(function() {
+    document.getElementById('line5').innerText =  randomizer(place)
+      },5000)
+    setTimeout(function() {
+    document.getElementById('line6').innerText = 'and find \n\ninstead'
+      },6000)
+    setTimeout(function() {
+    document.getElementById('line7').innerText = randomizer(adjective2)
+      },8500)
+    setTimeout(function() {
+    document.getElementById('line8').innerText = randomizer(noun2)
+      },10000)
+  
+  setTimeout(function() {        
+    document.getElementById('line1').innerText =  randomizer(adv_of_frequency)
+      },1000)
+    setTimeout(function() {
+    document.getElementById('line2').innerText =  'at ' + randomizer(time_of_day) + ','
+      },2000)
+    setTimeout(function() {
+    document.getElementById('line3').innerText = 'I look ' + randomizer(preposition) + ' the '
+      },3000)
+    setTimeout(function() {
+    document.getElementById('line4').innerText =  randomizer(adjective) + randomizer(noun)
+      },4000)
+    setTimeout(function() {
+    document.getElementById('line5').innerText =  randomizer(place)
+      },5000)
+    setTimeout(function() {
+    document.getElementById('line6').innerText = 'and find \n\ninstead'
+      },6000)
+    setTimeout(function() {
+    document.getElementById('line7').innerText = randomizer(adjective2)
+      },8500)
+    setTimeout(function() {
+    document.getElementById('line8').innerText = randomizer(noun2)
+      },10000)
+
+   
+  </script>
+    
+  </body>
+  </html>
