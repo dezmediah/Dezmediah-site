@@ -5,7 +5,7 @@
 <body>
 
 
-<div id='output'>
+<div id='here'>
   <p id='line1'></p>
   <p id='line2'></p>
   <p id='line3'></p>
@@ -18,6 +18,11 @@
 
 
 <script>
+  $(document).ready(function(){
+setInterval(function(){
+      $("#here").load(window.location.href + " #here" );
+}, 3000);
+});
     var adv_of_frequency = ['Sometimes','Often','Occasionally','Once in a blue moon','On a harvest moon','On the spring equinox','On the autumnal equinox']
     var time_of_day = ['night','dawn','midday']
     var preposition = ['under', 'past','for','away from']
