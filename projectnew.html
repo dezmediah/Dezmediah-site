@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head> <meta http-equiv="refresh" content="15"/> </meta> <p></p> <p></p> </head>
+  <head> <meta> </meta> <p></p> <p></p> </head>
 <body>
-<body>
-
-
 <div id='here'>
   <p id='line1'></p>
   <p id='line2'></p>
@@ -24,70 +21,74 @@ setInterval(function(){
 }, 3000);
 });
     var adv_of_frequency = ['Sometimes','Often','Occasionally','Once in a blue moon','On a harvest moon','On the spring equinox','On the autumnal equinox']
-    var time_of_day = ['night','dawn','midday']
-    var preposition = ['under', 'past','for','away from']
-    var adjective = ['modest\n','scruffy\n','tiny\n','hairy\n','slimy\n','broken\n']
-    var noun = ['bicycle figurine','3D print of a rambutan','depression booklet','anteater stuffed animal','hummingbird']
-    var place = ['on my nightstand,','in my dresser drawer,','between my sheets,','in the window planter box,','behind my bathroom mirror,']
-    var adjective2 = ['an enormous','an ancient','a greying','a mossy','a saggy','a drooling']
-    var noun2 = ['pebble.','owl.','potato.','kidney bean.','valerian root.','honeycomb.','yucca root.',]
+  var time_of_day = ['night','dawn','midday']
+  var preposition = ['under', 'past','for','away from']
+  var adjective = ['modest\n','scruffy\n','tiny\n','hairy\n','slimy\n','broken\n']
+  var noun = ['bicycle figurine','3D print of a rambutan','depression booklet','anteater stuffed animal','hummingbird']
+  var place = ['on my nightstand,','in my dresser drawer,','between my sheets,','in the window planter box,','behind my bathroom mirror,']
+  var adjective2 = ['an enormous','an ancient','a greying','a mossy','a saggy','a drooling']
+  var noun2 = ['pebble.','owl.','potato.','kidney bean.','valerian root.','honeycomb.','yucca root.',]
 
-    
+  var inProcess = false;
 
-    function randomizer(array_name) {
-        array_name = array_name[Math.floor(Math.random()*array_name.length)];
-        return array_name
-    }
-  
-   setTimeout(function() {        
-    document.getElementById('line1').innerText =  randomizer(adv_of_frequency)
-      },1000)
+  refresh(); 
+
+  document.getElementById('refresh').addEventListener('click', refresh)
+
+  function randomizer(array_name) {
+      array_name = array_name[Math.floor(Math.random()*array_name.length)];
+      return array_name
+  }
+
+  function clean() {
+    document.querySelectorAll('#here p').forEach((p) => p.innerHTML = '')
+  }
+
+  function refresh() {
+    if (inProcess) return;
+    inProcess = true;
+    setTimeout(function() { inProcess = false }, 10500);
+    clean();
+    setTimeout(function() {        
+        document.getElementById('line1').innerText =  randomizer(adv_of_frequency)
+    },1000)
     setTimeout(function() {
-    document.getElementById('line2').innerText =  'at ' + randomizer(time_of_day) + ','
-      },2000)
+        document.getElementById('line2').innerText =  'at ' + randomizer(time_of_day) + ','
+    },2000)
     setTimeout(function() {
-    document.getElementById('line3').innerText = 'I look ' + randomizer(preposition) + ' the '
-      },3000)
+        document.getElementById('line3').innerText = 'I look ' + randomizer(preposition) + ' the '
+    },3000)
     setTimeout(function() {
-    document.getElementById('line4').innerText =  randomizer(adjective) + randomizer(noun)
-      },4000)
+        document.getElementById('line4').innerText =  randomizer(adjective) + randomizer(noun)
+    },4000)
     setTimeout(function() {
-    document.getElementById('line5').innerText =  randomizer(place)
-      },5000)
+        document.getElementById('line5').innerText =  randomizer(place)
+    },5000)
     setTimeout(function() {
-    document.getElementById('line6').innerText = 'and find \n\ninstead'
-      },6000)
+        document.getElementById('line6').innerText = 'and find \n\ninstead'
+    },6000)
     setTimeout(function() {
-    document.getElementById('line7').innerText = randomizer(adjective2)
-      },8500)
+        document.getElementById('line7').innerText = randomizer(adjective2)
+    },8500)
     setTimeout(function() {
-    document.getElementById('line8').innerText = randomizer(noun2)
-      },10000)
-  
-  setTimeout(function() {        
-    document.getElementById('line1').innerText =  randomizer(adv_of_frequency)
-      },1000)
+        document.getElementById('line8').innerText = randomizer(noun2)
+    },10000)
+
+    setTimeout(function() {        
+        document.getElementById('line1').innerText =  randomizer(adv_of_frequency)
+    },1000)
     setTimeout(function() {
-    document.getElementById('line2').innerText =  'at ' + randomizer(time_of_day) + ','
-      },2000)
+        document.getElementById('line2').innerText =  'at ' + randomizer(time_of_day) + ','
+    },2000)
     setTimeout(function() {
-    document.getElementById('line3').innerText = 'I look ' + randomizer(preposition) + ' the '
-      },3000)
+        document.getElementById('line3').innerText = 'I look ' + randomizer(preposition) + ' the '
+    },3000)
     setTimeout(function() {
-    document.getElementById('line4').innerText =  randomizer(adjective) + randomizer(noun)
-      },4000)
+        document.getElementById('line4').innerText =  randomizer(adjective) + randomizer(noun)
+    },4000)
     setTimeout(function() {
-    document.getElementById('line5').innerText =  randomizer(place)
-      },5000)
-    setTimeout(function() {
-    document.getElementById('line6').innerText = 'and find \n\ninstead'
-      },6000)
-    setTimeout(function() {
-    document.getElementById('line7').innerText = randomizer(adjective2)
-      },8500)
-    setTimeout(function() {
-    document.getElementById('line8').innerText = randomizer(noun2)
-      },10000)
+        document.getElementById('line5').innerText =  randomizer(place)
+    },5000)
 
    
   </script>
